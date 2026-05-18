@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Macharia | Portfolio</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 🌐 Main Navigation Bar -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <em>J</em>M
+        </div>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#experience" class="nav-item">Experience</a></li>
+            <li><a href="#contact" class="nav-item btn-nav">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- 📱 Mobile Overlay Drawer -->
+    <nav class="drawer" id="drawer" aria-label="Mobile menu">
+        <div class="drawer-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact" class="drawer-btn">Contact</a>
+        </div>
+    </nav>
+
+    <!-- 🚀 Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+
+            <!-- Availability Badge -->
+            <div class="eyebrow">
+                <span class="status-dot"></span>
+                Available for hire
+            </div>
+
+            <!-- Name Layout -->
+            <h1 class="hero-name">
+                Joseph <span class="line2">Macharia</span>
+            </h1>
+
+            <!-- Professional Hook -->
+            <p class="hero-role">
+                <strong>Full-Stack Developer</strong> &amp; <strong>AI Enthusiast</strong> —
+                building elegant, scalable solutions at the intersection of design and technology.
+            </p>
+
+            <!-- Interactive Buttons -->
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-solid">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+
+            <!-- Metrics Dashboard -->
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-n">3<span>+</span></div>
+                    <div class="stat-l">Years Exp.</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-n">12<span>+</span></div>
+                    <div class="stat-l">Projects Delivered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-n">8<span>+</span></div>
+                    <div class="stat-l">Core Tech Stack</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+             ABOUT SECTION
+        ══════════════════════════════════════ -->
+    <section class="section section-alt" id="about">
+        <div class="about-grid">
+    
+            <!-- 📸 Asymmetric Photo Layout -->
+            <div class="about-photo-wrap">
+                <div class="about-photo-inner">
+                    <div class="about-photo">
+                        <img src="profile image.png" alt="Joseph Macharia">
+                    </div>
+                    <div class="about-corner"></div>
+                </div>
+            </div>
+    
+            <!-- 📝 Bio & Meta Metadata -->
+            <div class="about-text">
+                <div class="eyebrow">About Me</div>
+                <h2 class="section-title">Who I Am</h2>
+    
+                <div class="bio-paragraphs">
+                    <p>
+                        Hi, I'm <strong>Joseph Macharia</strong> — a passionate developer based in
+                        <strong>Nairobi, Kenya</strong>. I specialize in building modern web
+                        applications with clean architecture and thoughtful UX.
+                    </p>
+                    <p>
+                        I enjoy working across the full stack — from crafting pixel-perfect
+                        interfaces to designing robust back-end systems. When I'm not coding,
+                        I'm exploring new frameworks or diving into AI research.
+                    </p>
+                    <p>
+                        I'm currently open to <strong>freelance projects</strong> and
+                        <strong>full-time opportunities</strong>. Let's build something great together.
+                    </p>
+                </div>
+    
+                <!-- Personal Info Grid Matrix -->
+                <div class="about-meta">
+                    <div class="meta-item">
+                        <div class="meta-l">Name</div>
+                        <div class="meta-v">Joseph Macharia</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-l">Location</div>
+                        <div class="meta-v">Nairobi, Kenya</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-l">Email</div>
+                        <div class="meta-v">mashaliajosee@gmail.com</div> <!-- ✏️ Swap with your real email -->
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-l">Phone</div>
+                        <div class="meta-v">+254 706 490 015</div> <!-- ✏️ Swap with your real phone number -->
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-l">Availability</div>
+                        <div class="meta-v highlight-status">Open to Work</div>
+                    </div>
+                </div>
+    
+                <!-- Action Button -->
+                <a href="My Resume.pdf" download class="btn btn-solid btn-about">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download CV
+                </a>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+             SKILLS SECTION
+        ══════════════════════════════════════ -->
+    <section class="section" id="skills">
+        <div class="section-header">
+            <div class="eyebrow">What I Work With</div>
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <p class="section-subtitle">A growing toolkit spanning languages, frameworks, cloud platforms, and dev tools.
+            </p>
+        </div>
+    
+        <div class="skills-grid">
+    
+            <!-- Back-End Card -->
+            <div class="skill-card">
+                <div class="sk-header">
+                    <div class="sk-icon">🐍</div>
+                    <h3 class="sk-name">Back-End</h3>
+                </div>
+                <div class="pills">
+                    <span class="pill">Python</span>
+                    <span class="pill">Node.js</span>
+                    <span class="pill">Django</span>
+                    <span class="pill">FastAPI</span>
+                    <span class="pill">REST APIs</span>
+                </div>
+            </div>
+    
+            <!-- Front-End Card -->
+            <div class="skill-card">
+                <div class="sk-header">
+                    <div class="sk-icon">🎨</div>
+                    <h3 class="sk-name">Front-End</h3>
+                </div>
+                <div class="pills">
+                    <span class="pill">HTML/CSS</span>
+                    <span class="pill">JavaScript</span>
+                    <span class="pill">React</span>
+                    <span class="pill">Next.js</span>
+                    <span class="pill">Tailwind</span>
+                </div>
+            </div>
+    
+            <!-- Databases Card -->
+            <div class="skill-card">
+                <div class="sk-header">
+                    <div class="sk-icon">🗄️</div>
+                    <h3 class="sk-name">Databases</h3>
+                </div>
+                <div class="pills">
+                    <span class="pill">PostgreSQL</span>
+                    <span class="pill">MySQL</span>
+                    <span class="pill">MongoDB</span>
+                    <span class="pill">Redis</span>
+                </div>
+            </div>
+    
+            <!-- Cloud & DevOps Card -->
+            <div class="skill-card">
+                <div class="sk-header">
+                    <div class="sk-icon">☁️</div>
+                    <h3 class="sk-name">Cloud &amp; DevOps</h3>
+                </div>
+                <div class="pills">
+                    <span class="pill">AWS</span>
+                    <span class="pill">Docker</span>
+                    <span class="pill">GitHub Actions</span>
+                    <span class="pill">Linux</span>
+                    <span class="pill">Nginx</span>
+                </div>
+            </div>
+    
+            <!-- AI / ML Card -->
+            <div class="skill-card">
+                <div class="sk-header">
+                    <div class="sk-icon">🤖</div>
+                    <h3 class="sk-name">AI / ML</h3>
+                </div>
+                <div class="pills">
+                    <span class="pill">TensorFlow</span>
+                    <span class="pill">PyTorch</span>
+                    <span class="pill">scikit-learn</span>
+                    <span class="pill">OpenAI API</span>
+                </div>
+            </div>
+    
+            <!-- Tools Card -->
+            <div class="skill-card">
+                <div class="sk-header">
+                    <div class="sk-icon">🛠️</div>
+                    <h3 class="sk-name">Tools &amp; Design</h3>
+                </div>
+                <div class="pills">
+                    <span class="pill">Git</span>
+                    <span class="pill">VS Code</span>
+                    <span class="pill">Figma</span>
+                    <span class="pill">Postman</span>
+                    <span class="pill">Jira</span>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+             PROJECTS SECTION
+        ══════════════════════════════════════ -->
+    <section class="section section-alt" id="projects">
+        <div class="projects-container">
+    
+            <!-- 🔝 Header Stacked Clearly On Top -->
+            <div class="section-header">
+                <div class="eyebrow">What I've Built</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A selection of production-ready applications, platforms, and intelligent
+                    solutions.</p>
+            </div>
+    
+            <!-- 🎛️ Uniform 2x2 Grid Architecture -->
+            <div class="projects-grid">
+    
+                <!-- Project 1 -->
+                <!-- Project 3: Crop Yield & Soil Quality Analytics Platform -->
+                <div class="proj-card">
+                    <div class="proj-thumb">
+                        <img src="crop-analytics.png" alt="Crop Yield Analytics"
+                            onerror="this.style.display='none'; this.parentNode.innerHTML='📊';">
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="proj-tag"
+                                style="color: #ff9500; background-color: rgba(255, 149, 0, 0.08); border-color: rgba(255, 149, 0, 0.2);">Python</span>
+                            <span class="proj-tag"
+                                style="color: #ff9500; background-color: rgba(255, 149, 0, 0.08); border-color: rgba(255, 149, 0, 0.2);">Pandas</span>
+                            <span class="proj-tag"
+                                style="color: #ff9500; background-color: rgba(255, 149, 0, 0.08); border-color: rgba(255, 149, 0, 0.2);">Scikit-Learn</span>
+                        </div>
+                        <h3 class="proj-title">Predictive Soil & Crop Yield Model</h3>
+                        <p class="proj-desc">A predictive analysis model designed to optimize smallholder farming outputs. It cleans and
+                            evaluates regional soil pH datasets to forecast harvest yields based on climatic and chemical variables.</p>
+                        <div class="proj-links">
+                            <a href="#" class="proj-link">Notebook Demo</a>
+                            <a href="https://github.com/mashaliaJ" target="_blank" class="proj-link">📡 Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Urban Congestion & Traffic Flow Analytics -->
+                <div class="proj-card">
+                    <div class="proj-thumb">
+                        <img src="urban-traffic.png" alt="Urban Traffic Flow Analytics"
+                            onerror="this.style.display='none'; this.parentNode.innerHTML='🚙';">
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="proj-tag"
+                                style="color: #af52de; background-color: rgba(175, 82, 222, 0.08); border-color: rgba(175, 82, 222, 0.2);">SQL
+                                (MySQL)</span>
+                            <span class="proj-tag"
+                                style="color: #af52de; background-color: rgba(175, 82, 222, 0.08); border-color: rgba(175, 82, 222, 0.2);">Jupyter</span>
+                            <span class="proj-tag"
+                                style="color: #af52de; background-color: rgba(175, 82, 222, 0.08); border-color: rgba(175, 82, 222, 0.2);">Matplotlib</span>
+                        </div>
+                        <h3 class="proj-title">Urban Congestion Analytics Engine</h3>
+                        <p class="proj-desc">A data engineering pipeline that ingests complex city transit logs into structured
+                            relational tables. Extracts bottlenecks, performs exploratory data analysis (EDA), and builds statistical
+                            visualizations for transit solutions.</p>
+                        <div class="proj-links">
+                            <a href="#" class="proj-link">Live Dashboard</a>
+                            <a href="https://github.com/mashaliaJ" target="_blank" class="proj-link">📡 Code</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="proj-card">
+                    <div class="proj-thumb">🌾</div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="proj-tag">Django</span>
+                            <span class="proj-tag">MySQL</span>
+                        </div>
+                        <h3 class="proj-title">AgriLink</h3>
+                        <p class="proj-desc">A digital marketplace tailored for Kenyan agriculture connecting smallholder
+                            farmers to verified inputs.</p>
+                        <div class="proj-links">
+                            <a href="#" class="proj-link">Live Demo</a>
+                            <a href="#" class="proj-link">📡 Code</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="proj-card">
+                    <div class="proj-thumb">📚</div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="proj-tag">React</span>
+                            <span class="proj-tag">Node.js</span>
+                        </div>
+                        <h3 class="proj-title">Homework Helper Kenya</h3>
+                        <p class="proj-desc">An AI-powered edtech application designed to support Grade 7 to 9 parents and
+                            learners navigating the CBC framework.</p>
+                        <div class="proj-links">
+                            <a href="#" class="proj-link">Live Demo</a>
+                            <a href="#" class="proj-link">📡 Code</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+             EXPERIENCE & EDUCATION SECTION
+        ══════════════════════════════════════ -->
+    <section class="section" id="experience">
+        <div class="journey-container">
+    
+            <div class="section-header">
+                <div class="eyebrow">My Journey</div>
+                <h2 class="section-title">Experience &amp; Education</h2>
+                <p class="section-subtitle">Places I've worked, studied, and grown as a technical professional.</p>
+            </div>
+    
+            <!-- 🎛️ Dual Column Split Grid Layer -->
+            <div class="journey-grid">
+    
+                <!-- 💼 COLUMN 1: PROFESSIONAL EXPERIENCE -->
+                <div class="journey-col">
+                    <div class="col-sticky-title">
+                        <span class="col-icon">💼</span>
+                        <h3>Experience</h3>
+                    </div>
+    
+                    <div class="journey-list">
+                        <!-- Experience Item 1 -->
+                        <div class="journey-item">
+                            <div class="item-meta">
+                                <span class="item-date">2024 – Present</span>
+                                <span class="item-org">Self-Employed · Nairobi</span>
+                            </div>
+                            <h4 class="item-role">Freelance Full-Stack Developer &amp; MVP Architect</h4>
+                            <ul class="item-bullets">
+                                <li>Partnering with early-stage startups to engineer production-ready Minimum Viable
+                                    Products (MVPs).</li>
+                                <li>Architecting highly responsive, smooth frontend single-page interfaces utilizing React.
+                                </li>
+                                <li>Building robust relational backend schemas and administrative route infrastructures with
+                                    Django and SQL.</li>
+                            </ul>
+                        </div>
+    
+                        <!-- Experience Item 2 -->
+                        <div class="journey-item">
+                            <div class="item-meta">
+                                <span class="item-date">2023 – Present</span>
+                                <span class="item-org">Freelance Ecosystem</span>
+                            </div>
+                            <h4 class="item-role">Data Analyst &amp; Academic Specialist</h4>
+                            <ul class="item-bullets">
+                                <li>Leveraging advanced statistical analysis and mathematical predictive modeling to
+                                    transform raw datasets.</li>
+                                <li>Building data cleaning automation pipelines to run data exploration and audit processes.
+                                </li>
+                                <li>Delivering professional, high-fidelity transcription and formatting for complex audio
+                                    datasets.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 🎓 COLUMN 2: ACADEMIC EDUCATION -->
+                <div class="journey-col">
+                    <div class="col-sticky-title">
+                        <span class="col-icon">🎓</span>
+                        <h3>Education</h3>
+                    </div>
+    
+                    <div class="journey-list">
+                        <!-- Education Item 1 -->
+                        <div class="journey-item">
+                            <div class="item-meta">
+                                <span class="item-date">Graduated</span>
+                                <span class="item-org">University Level</span>
+                            </div>
+                            <h4 class="item-role">BSc in Mathematics and Statistics / Computer Science</h4>
+                            <ul class="item-bullets">
+                                <li>Built a rigorous quantitative foundation covering applied probability matrices and
+                                    statistical modeling.</li>
+                                <li>Bridged theoretical analytical methods directly with software engineering
+                                    implementations.</li>
+                                <li>Extensive coursework in advanced relational database architecture, algorithms, and data
+                                    structures.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+             CONTACT SECTION
+        ══════════════════════════════════════ -->
+    <section class="section section-alt" id="contact">
+        <div class="contact-container">
+    
+            <div class="section-header">
+                <div class="eyebrow">Get In Touch</div>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Have an MVP to build, a dataset to analyze, or a professional role to discuss?
+                    Drop a line.</p>
+            </div>
+    
+            <div class="contact-split">
+    
+                <!-- Left Hand Interactive Form Wrapper -->
+                <div class="form-wrapper">
+                    <div class="contact-card form-card">
+                        <form action="#" method="POST" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Macharia Joseph" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="macharia@example.com"
+                                        required />
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="subject">Project Goal</label>
+                                <input type="text" id="subject" name="subject"
+                                    placeholder="MVP Development / Data Consultation" required />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Tell me a bit about what you are working on..." required></textarea>
+                            </div>
+    
+                            <button type="submit" class="btn-submit">
+                                <span>Send Message</span>
+                                <span class="btn-icon">🚀</span>
+                            </button>
+                        </form>
+                    </div>
+    
+                    <!-- 🎛️ Integrated Quick Connect Link Grid -->
+                    <div class="contact-grid fi">
+                        <a href="mailto:mashaliajosee@gmail.com" class="c-link">
+                            <span class="c-icon">✉️</span>Email
+                        </a>
+                        <a href="https://github.com/mashaliaJ" target="_blank" rel="noopener" class="c-link">
+                            <span class="c-icon">🐙</span>GitHub
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="c-link">
+                            <span class="c-icon">💼</span>LinkedIn
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" class="c-link">
+                            <span class="c-icon"></span><strong>X</strong>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Right Hand Direct Network Channels -->
+                <div class="contact-channels">
+    
+                    <div class="channel-item">
+                        <div class="channel-icon">✉️</div>
+                        <div class="channel-details">
+                            <h5>Direct Email</h5>
+                            <a href="mailto:mashaliajosee@gmail.com">mashaliajosee@gmail.com</a>
+                            <p>Expect a response within 24 business hours.</p>
+                        </div>
+                    </div>
+    
+                    <div class="channel-item">
+                        <div class="channel-icon">💼</div>
+                        <div class="channel-details">
+                            <h5>Fiverr Marketplace</h5>
+                            <a href="https://www.fiverr.com" target="_blank" rel="noopener noreferrer">Order an MVP Gig</a>
+                            <p>Available for secure structural contracts and custom data projects.</p>
+                        </div>
+                    </div>
+    
+                    <div class="channel-item">
+                        <div class="channel-icon">💻</div>
+                        <div class="channel-details">
+                            <h5>GitHub Ecosystem</h5>
+                            <a href="https://github.com/mashaliaJ" target="_blank"
+                                rel="noopener noreferrer">github.com/mashaliaJ</a>
+                            <p>Explore source files, repositories, and predictive data models.</p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- 🧠 Mobile Menu Drawer Script -->
+    <script>
+        const burger = document.getElementById('burger');
+        const drawer = document.getElementById('drawer');
+
+        burger.addEventListener('click', () => {
+            const isOpened = burger.getAttribute('aria-expanded') === 'true';
+            burger.setAttribute('aria-expanded', !isOpened);
+            burger.classList.toggle('active');
+            drawer.classList.toggle('open');
+            document.body.style.overflow = !isOpened ? 'hidden' : '';
+        });
+
+        document.querySelectorAll('.drawer a').forEach(link => {
+            link.addEventListener('click', () => {
+                burger.setAttribute('aria-expanded', 'false');
+                burger.classList.remove('active');
+                drawer.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+</body>
+
+</html>
