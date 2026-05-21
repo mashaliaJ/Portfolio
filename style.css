@@ -1274,3 +1274,268 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* --- ══════════════════════════════════════
+   VECTOR SVG VECTOR GRAPHIC ALIGNMENTS
+   ══════════════════════════════════════ --- */
+
+/* Form submit icon sizing */
+.btn-svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.2s ease;
+}
+
+.btn-submit:hover .btn-svg {
+    transform: translate(2px, -2px);
+    /* Makes the paper plane look like it is taking off */
+}
+
+/* Quick link row icons styling */
+.c-svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+/* Channel blocks layout sizing adjustments */
+.channel-svg {
+    width: 20px;
+    height: 20px;
+    color: var(--primary);
+}
+
+/* --- ══════════════════════════════════════
+   SKILLS INLINE SVG VECTOR ALIGNMENTS
+   ══════════════════════════════════════ --- */
+
+.sk-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.sk-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    color: var(--primary, #0071e3);
+    /* Keeps the icon branding unified with your accent color */
+    flex-shrink: 0;
+}
+
+/* Forces SVGs inside headers to scale down properly */
+.sk-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- ══════════════════════════════════════
+   PROJECTS EMBEDDED VECTOR GRAPHIC STYLES
+   ══════════════════════════════════════ --- */
+
+/* Centers the placeholder SVGs inside the thumbnail box */
+.proj-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-bg-alt, #f5f5f7);
+    min-height: 180px;
+    /* Adjust this value to match your theme's aspect ratio */
+    border-radius: 12px;
+    overflow: hidden;
+    color: var(--text-muted);
+}
+
+.thumb-svg {
+    width: 32px;
+    height: 32px;
+    stroke-width: 1.5;
+    opacity: 0.6;
+}
+
+/* Code link vector icons alignment */
+.proj-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.link-svg {
+    width: 14px;
+    height: 14px;
+    stroke-width: 2.2;
+}
+
+/* --- ══════════════════════════════════════
+   COMPACT PROJECTS GRID & ICON GEOMETRY
+   ══════════════════════════════════════ --- */
+
+/* 1. Compresses the total width profile of the grid cells */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Dropped from 320px+ to narrow boxes */
+    gap: 20px;
+    /* Reduces space between neighboring cards */
+    max-width: 1000px;
+    /* Optional: bounds the absolute spread across wide viewports */
+    margin: 0 auto;
+}
+
+/* 2. Controls the box profile and truncates layout bloating */
+.proj-card {
+    border-radius: 8px;
+    /* Slightly tighter curves to fit a smaller profile */
+    overflow: hidden;
+}
+
+/* 3. Reduces the vertical footprint of the top thumbnail area */
+.proj-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    /* Minimal neutral placeholder background */
+    height: 120px;
+    /* Significantly dropped from 180px to pull content upwards */
+    color: #8e8e93;
+}
+
+/* 4. Scales down the vector icons within the compressed thumbnail boxes */
+.thumb-svg {
+    width: 24px;
+    /* Reduced from 32px to match the lower box height perfectly */
+    height: 24px;
+    stroke-width: 1.75;
+}
+
+/* 5. Compact card typography padding */
+.proj-body {
+    padding: 16px;
+    /* Reduced internal padding to keep the text block compact */
+}
+
+.proj-title {
+    font-size: 1.1rem;
+    /* Marginally downscales title for visual balance */
+    margin-bottom: 6px;
+}
+
+.proj-desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* --- ══════════════════════════════════════
+   TESTIMONIALS SECTION STYLES
+   ══════════════════════════════════════ --- */
+
+.testimonials-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Dual-card split setup matching the optimized compact project cards */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.test-card {
+    background-color: var(--card-bg, #ffffff);
+    border: 1px solid var(--border-color, rgba(0, 0, 0, 0.05));
+    border-radius: 8px;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Minimalist quotation graphic style */
+.test-quote-icon {
+    color: var(--accent-color, #ff9500);
+    opacity: 0.15;
+    width: 28px;
+    height: 28px;
+    margin-bottom: 12px;
+}
+
+.test-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-main, #333333);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Author block metadata positioning */
+.test-author {
+    border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.06));
+    padding-top: 14px;
+}
+
+.author-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-title, #111111);
+    margin: 0 0 2px 0;
+}
+
+.author-role {
+    font-size: 0.8rem;
+    color: var(--text-muted, #8e8e93);
+    display: block;
+}
+
+/* --- ══════════════════════════════════════
+   INTERACTIVE METRICS RIBBON STYLES
+   ══════════════════════════════════════ --- */
+
+.metrics-ribbon {
+    background-color: var(--card-bg, #ffffff);
+    border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.05));
+    border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.05));
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+.metrics-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    text-align: center;
+}
+
+.metric-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.metric-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--accent-color, #ff9500);
+    /* Uses your brand accent color */
+    letter-spacing: -1px;
+}
+
+.metric-label {
+    font-size: 0.85rem;
+    color: var(--text-muted, #8e8e93);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
